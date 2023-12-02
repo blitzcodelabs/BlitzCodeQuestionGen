@@ -8,10 +8,10 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ChatResponse {
+    private final String OPENAI_API_KEY = System.getenv("OPENAI_API_KEY");
     public String getQuestion(String prompt){
-        var service = new OpenAiService("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", Duration.ofMinutes(1));
+        var service = new OpenAiService(OPENAI_API_KEY, Duration.ofMinutes(3));
         List<ChatMessage> messages = new ArrayList<>();
         var message = new ChatMessage("user", prompt);
         messages.add(message);

@@ -1,0 +1,52 @@
+[
+{
+  "question": "What is the translation, if you want to print a new line: print('Hello, World!')",
+  "answer": "System.out.println(\"Hello, World!\");",
+  "wrongAnswers": ["System.out.print(\"Hello, World!\");", "console.log(\"Hello, World!\");", "System.println(\"Hello, World!\");"]
+},
+{
+  "question": "What is the translation: print(5 + 3)",
+  "answer": "System.out.println(5 + 3);",
+  "wrongAnswers": ["System.out.println(5 + 3;)", "console.log(5 + 3);", "System.out.print(5 + 3);"]
+},
+{
+  "question": "What is the translation: print('The result is:', result)",
+  "answer": "System.out.println(\"The result is: \" + result);",
+  "wrongAnswers": ["System.out.println(\"The result is:\" result);", "console.log(\"The result is:\" + result);", "System.out.print(\"The result is:\" + result);"]
+},
+{
+  "question": "What is the translation: print('x =', x, 'and y =', y)",
+  "answer": "System.out.println(\"x = \" + x + \" and y = \" + y);",
+  "wrongAnswers": ["System.out.println(\"x =\" x \"and y =\" y);", "console.log(\"x =\", x, \"and y =\", y);", "System.out.print(\"x = \" + x + \" and y = \" + y);"]
+},
+{
+  "question": "What is the translation: print('The value is:', value, 'and the result is:', result)",
+  "answer": "System.out.println(\"The value is:\" + value + \" and the result is:\" + result);",
+  "wrongAnswers": ["System.out.println(\"The value is:\" value \"and the result is:\" result);", "console.log(\"The value is:\" + value + \" and the result is:\" + result);", "System.out.print(\"The value is:\" + value + \" and the result is:\" + result);"]
+},
+{
+  "question": "What is the translation: print('a =', a, 'and b =', b)",
+  "answer": "System.out.println(\"a =\" + a + \" and b =\" + b + \" \");",
+  "wrongAnswers": ["System.out.println(\"a =\", a, \"and b =\", b, \"\");", "console.log(\"a =\", a, \"and b =\", b);", "System.out.print(\"a =\" + a + \" and b =\" + b + \" \");"]
+},
+{
+  "question": "What is the translation: print(10 / 5)",
+  "answer": "System.out.println(10 / 5);",
+  "wrongAnswers": ["System.out.println(10 / 5;)", "console.log(10 / 5);", "System.out.print(Math.(10 / 5));"]
+},
+{
+  "question": "What is the translation: print('The sum is:', a + b)",
+  "answer": "System.out.println(\"The sum is: \" + (a + b));",
+  "wrongAnswers": ["System.out.println(\"The sum is:\" a + b);", "console.log(\"The sum is:\" + a + b);", "System.out.print(\"The sum is:\" + a + b);"]
+},
+{
+  "question": "What is the translation: print('The result is:', a - b)",
+  "answer": "System.out.println(\"The result is: \" + (a - b));",
+  "wrongAnswers": ["System.out.println(\"The result is:\" a - b);", "console.log(\"The result is:\" + a - b);", "System.out.print(\"The result is:\" + a - b);"]
+},
+{
+  "question": "What is the translation: print('The product is:', a * b)",
+  "answer": "System.out.println(\"The product is: \" + (a * b));",
+  "wrongAnswers": ["System.out.println(\"The product is:\" a * b);", "console.log(\"The product is:\" + a * b);", "System.out.print(\"The product is:\" + a * b);"]
+}
+]
