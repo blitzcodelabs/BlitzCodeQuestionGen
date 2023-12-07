@@ -27,8 +27,8 @@ public class QuestionDistributor {
     }
     public static void main(String[] args){
         var distributor = new QuestionDistributor();
-        distributor.distribute("src/main/data/JavaToPython/modules/Essentials/Printing.json", "python", "java", "printing statements");
-        //distributor.distribute("src/main/data/PythonToJava/modules/Essentials/Printing.json", "java", "python", "printing statements");
+        distributor.distribute("src/main/data/JavaToPython/modules/Decision Making/Conditionals.json", "python", "java", "conditional statements");
+        distributor.distribute("src/main/data/PythonToJava/modules/Decision Making/Conditionals.json", "java", "python", "conditional statements");
     }
 
 }

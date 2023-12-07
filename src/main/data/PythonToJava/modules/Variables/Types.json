@@ -1,0 +1,52 @@
+[
+{
+  "question": "my_var = 5",
+  "answer": "int my_var = 5;",
+  "wrongAnswers": ["myVar = 5;", "int myVar = 5;", "myVar = int(5);"]
+},
+{
+  "question": "my_var = 'Hello'",
+  "answer": "String myVar = \"Hello\";",
+  "wrongAnswers": ["String my_var = 'Hello';", "myVar = \"Hello\";", "my_var = \"Hello\";"]
+},
+{
+  "question": "my_var = True",
+  "answer": "boolean my_var = true;",
+  "wrongAnswers": ["boolean myVar = True;", "myVar = True;", "my_var = true;"]
+},
+{
+  "question": "my_var = 3.14",
+  "answer": "double my_var = 3.14;",
+  "wrongAnswers": ["myVar = 3.14;", "double myVar = 3.14;", "my_var = double(3.14);"]
+},
+{
+  "question": "my_var = [1, 2, 3]",
+  "answer": "int[] my_var = {1, 2, 3};",
+  "wrongAnswers": ["int myVar = [1, 2, 3];", "my_var = [1, 2, 3];", "myVar = int[1, 2, 3];"]
+},
+{
+  "question": "my_var = (1, 2, 3)",
+  "answer": "int[] my_var = {1, 2, 3};",
+  "wrongAnswers": ["int myVar = (1, 2, 3);", "myVar = (1, 2, 3);", "my_var = int[1, 2, 3];"]
+},
+{
+  "question": "my_var = {'a': 1, 'b': 2}",
+  "answer": "Map<String, Integer> myVar = new HashMap<String, Integer>();\nmyVar.put(\"a\", 1);\nmyVar.put(\"b\", 2);",
+  "wrongAnswers": ["Map myVar = {'a': 1, 'b': 2};", "myVar = {'a': 1, 'b': 2};", "my_var = {'a': 1, 'b': 2};"]
+},
+{
+  "question": "my_var = None",
+  "answer": "Object my_var = null;",
+  "wrongAnswers": ["Object my_var = None;", "my_var = null;", "myVar = None;"]
+},
+{
+  "question": "my_var = '123'",
+  "answer": "int my_var = Integer.parseInt(\"123\");",
+  "wrongAnswers": ["myVar = '123';", "String my_var = '123';", "my_var = Integer.parseInt('123');"]
+},
+{
+  "question": "my_var = input()",
+  "answer": "Scanner scanner = new Scanner(System.in);\nString myVar = scanner.nextLine();",
+  "wrongAnswers": ["String my_var = scanner.nextLine();", "myVar = input();", "myVar = scanner.nextLine();"]
+}
+]

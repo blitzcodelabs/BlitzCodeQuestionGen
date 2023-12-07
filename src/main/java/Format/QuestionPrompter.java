@@ -2,11 +2,11 @@ package Format;
 
 public class QuestionPrompter {
     public String createPrompt(String targetLang, String srcLang, String topic){
-        var prompt = "Create 10 questions asking to translate a line of " + srcLang + "language code to " + targetLang + "language, with code ONLY on the topic of " + topic + ". Include wrong answers. Format the response as JSON in the shape of \n" +
+        var prompt = "Create 10 simple questions asking to translate a line of " + srcLang + "language code to " + targetLang + "language code, with code ONLY on the topic of " + topic + ". Include 3 wrong answers. Don't include the question itself in the 'question' key value.  Format the response as JSON in the shape of \n" +
                 "[{\n" +
-                "  \"question\": \"What is the translation: int x = 5; \",\n" +
-                "  \"answer\": \"x = 5\",\n" +
-                "  \"wrongAnswers\": [\"let x = 5\", \"var x = 5 \", \"integer = 5;\"]\n" +
+                "  \"question\": \"some code here\",\n" +
+                "  \"answer\": \"some code here\",\n" +
+                "  \"wrongAnswers\": [\"wrong code here\", \"wrong code here\", \"wrong code here\"]\n" +
                 "}];";
         return prompt;
     }

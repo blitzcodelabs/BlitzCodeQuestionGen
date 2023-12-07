@@ -1,0 +1,52 @@
+[
+{
+  "question": "x = 5",
+  "answer": "int x = 5;",
+  "wrongAnswers": ["x = 5;", "x = int 5;", "int x = 5"]
+},
+{
+  "question": "print('Hello, World!')",
+  "answer": "System.out.println('Hello, World!');",
+  "wrongAnswers": ["print('Hello, World!');", "System.print('Hello, World!');", "System.out.print('Hello, World!');"]
+},
+{
+  "question": "y = x + 3",
+  "answer": "int y = x + 3;",
+  "wrongAnswers": ["y = x + 3;", "int y = x + 3", "int y = x + int 3;"]
+},
+{
+  "question": "if x > 0: \n    print('Positive') \nelse: \n    print('Negative')",
+  "answer": "if (x > 0) {\n    System.out.println('Positive');\n} else {\n    System.out.println('Negative');\n}",
+  "wrongAnswers": ["if x > 0 { \n    System.out.println('Positive'); \n} else { \n    System.out.println('Negative'); \n}", "if x > 0 \n    System.out.println('Positive'); \nelse \n    System.out.println('Negative');", "if (x > 0) \n    System.print('Positive'); \nelse \n    System.out.print('Negative');"]
+},
+{
+  "question": "num_list = [1, 2, 3, 4, 5]",
+  "answer": "int[] num_list = {1, 2, 3, 4, 5};",
+  "wrongAnswers": ["num_list = [1, 2, 3, 4, 5];", "List<Integer> num_list = {1, 2, 3, 4, 5};", "int[] num_list = [1, 2, 3, 4, 5];"]
+},
+{
+  "question": "for num in num_list: \n    print(num)",
+  "answer": "for (int num : num_list) {\n    System.out.println(num);\n}",
+  "wrongAnswers": ["for num in num_list: \n    System.out.println(num);", "for (int num = 0; num < num_list.length; num++) {\n    System.out.println(num_list[num]);\n}", "for (int num : num_list) \n    System.out.print(num)"]
+},
+{
+  "question": "def greet(name): \n    print('Hello, ' + name)",
+  "answer": "void greet(String name) {\n    System.out.println('Hello, ' + name);\n}",
+  "wrongAnswers": ["def greet(name): \n    System.out.println('Hello, ' + name);", "function greet(name) {\n    System.out.println('Hello, ' + name);\n}", "void greet(name) \n    System.out.print('Hello, ' + name);"]
+},
+{
+  "question": "result = (x + y) * z",
+  "answer": "int result = (x + y) * z;",
+  "wrongAnswers": ["result = (x + y) * z;", "int result = x + y * z;", "int result = (x + y) * int z;"]
+},
+{
+  "question": "while i < 10: \n    print(i) \n    i += 1",
+  "answer": "int i = 0;\nwhile (i < 10) {\n    System.out.println(i);\n    i++;\n}",
+  "wrongAnswers": ["while (i < 10) { \n    System.out.println(i); \n    i += 1; \n}", "while (i < 10) { \n    System.out.println(i); \n    i--; \n}", "for (int i = 0; i < 10; i++) { \n    System.out.println(i); \n}"]
+},
+{
+  "question": "def add(a, b): \n    return a + b",
+  "answer": "int add(int a, int b) {\n    return a + b;\n}",
+  "wrongAnswers": ["def add(a, b): \n    a + b", "int add(a, b) \n    return a + b", "function add(int a, int b) {\n    return a + b;\n}"]
+}
+]

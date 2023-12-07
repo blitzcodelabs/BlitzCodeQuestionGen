@@ -1,0 +1,50 @@
+[{
+  "question": "x = 5",
+  "answer": "int x = 5;",
+  "wrongAnswers": ["int 5 = x;", "x = int 5;", "int x = int(5);"]
+},
+{
+  "question": "y = 'Hello'",
+  "answer": "String y = \"Hello\";",
+  "wrongAnswers": ["String Hello = y;", "y = String \"Hello\";", "String y = String(\"Hello\");"]
+},
+{
+  "question": "z = 3.14",
+  "answer": "double z = 3.14;",
+  "wrongAnswers": ["double 3.14 = z;", "z = double 3.14;", "double z = double(3.14);"]
+},
+{
+  "question": "a = True",
+  "answer": "boolean a = true;",
+  "wrongAnswers": ["boolean true = a;", "a = boolean true;", "boolean a = boolean(true);"]
+},
+{
+  "question": "b = 'World'",
+  "answer": "String b = \"World\";",
+  "wrongAnswers": ["String World = b;", "b = String \"World\";", "String b = String(\"World\");"]
+},
+{
+  "question": "c = 10.5",
+  "answer": "float c = 10.5;",
+  "wrongAnswers": ["float 10.5 = c;", "c = float 10.5;", "float c = float(10.5);"]
+},
+{
+  "question": "d = False",
+  "answer": "boolean d = false;",
+  "wrongAnswers": ["boolean false = d;", "d = boolean false;", "boolean d = boolean(false);"]
+},
+{
+  "question": "e = 'Python'",
+  "answer": "String e = \"Python\";",
+  "wrongAnswers": ["String Python = e;", "e = String \"Python\";", "String e = String(\"Python\");"]
+},
+{
+  "question": "f = 7",
+  "answer": "int f = 7;",
+  "wrongAnswers": ["int 7 = f;", "f = int 7;", "int f = int(7);"]
+},
+{
+  "question": "g = 1.5",
+  "answer": "double g = 1.5;",
+  "wrongAnswers": ["double 1.5 = g;", "g = double 1.5;", "double g = double(1.5);"]
+}]

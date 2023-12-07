@@ -1,0 +1,52 @@
+[
+{
+  "question": "x = 10",
+  "answer": "int x = 10;",
+  "wrongAnswers": ["x = 10;", "var x = 10;", "int x = 10"]
+},
+{
+  "question": "y = x + 5",
+  "answer": "int y = x + 5;",
+  "wrongAnswers": ["y = x + 5;", "var y = x + 5;", "int y = x + 5"]
+},
+{
+  "question": "z = x * y",
+  "answer": "int z = x * y;",
+  "wrongAnswers": ["z = x * y;", "var z = x * y;", "int z = x * y"]
+},
+{
+  "question": "a = x / y",
+  "answer": "double a = (double) x / y;",
+  "wrongAnswers": ["a = x / y;", "var a = x / y;", "int a = x / y;"]
+},
+{
+  "question": "b = x % 2",
+  "answer": "int b = x % 2;",
+  "wrongAnswers": ["b = x % 2;", "var b = x % 2;", "int b = x % 2"]
+},
+{
+  "question": "c = x ** 3",
+  "answer": "int c = (int) Math.pow(x, 3);",
+  "wrongAnswers": ["c = x ** 3;", "var c = x ** 3;", "int c = x ** 3"]
+},
+{
+  "question": "d = x - y",
+  "answer": "int d = x - y;",
+  "wrongAnswers": ["d = x - y;", "var d = x - y;", "int d = x - y"]
+},
+{
+  "question": "e = x += 3",
+  "answer": "x += 3;",
+  "wrongAnswers": ["e = x += 3;", "var e = x += 3;", "int e = x += 3;"]
+},
+{
+  "question": "f = y -= 2",
+  "answer": "y -= 2;",
+  "wrongAnswers": ["f = y -= 2;", "var f = y -= 2;", "int f = y -= 2;"]
+},
+{
+  "question": "g = z *= 4",
+  "answer": "z *= 4;",
+  "wrongAnswers": ["g = z *= 4;", "var g = z *= 4;", "int g = z *= 4;"]
+}
+]
