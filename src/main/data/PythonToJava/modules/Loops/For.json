@@ -1,0 +1,50 @@
+[{
+  "question": "for i in range(5):",
+  "answer": "for(int i=0; i<5; i++)",
+  "wrongAnswers": ["for(int i=1; i<=5; i++)", "for i=0; i<5; i++", "for(int i=0; i<=5: i++)"]
+},
+{
+  "question": "for item in my_list:",
+  "answer": "for(Object item : my_list)",
+  "wrongAnswers": ["for(int item : my_list)", "for item in my_list()", "for(Object item in my_list)"]
+},
+{
+  "question": "for char in 'hello':",
+  "answer": "for(char c : \"hello\".toCharArray())",
+  "wrongAnswers": ["for(char c in \"hello\")", "for(char c : 'hello')", "for(int char in 'hello')"]
+},
+{
+  "question": "for key, value in my_dict.items():",
+  "answer": "for(Map.Entry<String, Integer> entry : my_dict.entrySet())",
+  "wrongAnswers": ["for(String key, Integer value : my_dict.items())", "for(Entry entry : my_dict.entrySet())", "for key, value : my_dict"]
+},
+{
+  "question": "for i in range(1, 10, 2):",
+  "answer": "for(int i=1; i<10; i+=2)",
+  "wrongAnswers": ["for(int i=1; i<=10; i+=2)", "for(int i=1; i<10; i=i+2)", "for(int i=1; i<10; i++)"]
+},
+{
+  "question": "for element in my_array:",
+  "answer": "for(Object element : my_array)",
+  "wrongAnswers": ["for element in my_array()", "for(Object element : my_array[])", "for(int element : my_array)"]
+},
+{
+  "question": "for i in range(len(my_list)):",
+  "answer": "for(int i=0; i<my_list.size(); i++)",
+  "wrongAnswers": ["for(int i=1; i<=len(my_list); i++)", "for i=0; i<my_list.length(); i++", "for i in my_list"]
+},
+{
+  "question": "for index, value in enumerate(my_list):",
+  "answer": "for(int index=0; index<my_list.size(); index++)",
+  "wrongAnswers": ["for int index, value in enumerate(my_list):", "for(int index=0; index<my_list.length; index++)", "for(int index : my_list)"
+},
+{
+  "question": "for i in range(5, 1, -1):",
+  "answer": "for(int i=5; i>1; i--)",
+  "wrongAnswers": ["for(int i=5; i>=1; i--)", "for(i=5; i>1; i--)", "for(int i=5; i>1; i++)"]
+},
+{
+  "question": "for i, j in zip(list1, list2):",
+  "answer": "for(int i=0; i<list1.size(); i++) {\n  int j = list2.get(i);",
+  "wrongAnswers": ["for i, j in zip(list1, list2):", "for(int i=0; i<list1.length(); i++) {\n  int j = list2[i];", "for(int i=0; i<=list1.size(); i++)"]
+}]

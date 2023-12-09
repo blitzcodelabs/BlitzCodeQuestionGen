@@ -1,0 +1,52 @@
+[
+{
+  "question": "my_list.append(5)",
+  "answer": "my_list.add(5);",
+  "wrongAnswers": ["myList.append(5)", "myList.add(5)", "my_list.add(5)"]
+},
+{
+  "question": "my_list.pop()",
+  "answer": "my_list.remove(my_list.size() - 1);",
+  "wrongAnswers": ["my_list.pop()", "my_list.remove(0)", "my_list.remove(-1)"]
+},
+{
+  "question": "len(my_list)",
+  "answer": "my_list.size();",
+  "wrongAnswers": ["my_list.length()", "len(my_list)", "length(my_list)"]
+},
+{
+  "question": "my_list.index(10)",
+  "answer": "my_list.indexOf(10);",
+  "wrongAnswers": ["my_list.index(10)", "indexOf(10)", "my_list.indexOf(10)"]
+},
+{
+  "question": "my_list.insert(2, 'hello')",
+  "answer": "my_list.add(2, \"hello\");",
+  "wrongAnswers": ["my_list.insert('hello', 2)", "my_list.insert('hello', 2)", "my_list.add(\"hello\", 2)"]
+},
+{
+  "question": "my_list.sort()",
+  "answer": "Collections.sort(my_list);",
+  "wrongAnswers": ["my_list.sort()", "Collections.sort(my_list)", "sort(my_list)"]
+},
+{
+  "question": "my_list.reverse()",
+  "answer": "Collections.reverse(my_list);",
+  "wrongAnswers": ["my_list.reverse()", "reverse(my_list)", "Collections.reverse(my_list)"]
+},
+{
+  "question": "my_list.count(5)",
+  "answer": "Collections.frequency(my_list, 5);",
+  "wrongAnswers": ["my_list.count(5)", "count(my_list, 5)", "Collections.frequency(5, my_list)"]
+},
+{
+  "question": "my_list.remove('hello')",
+  "answer": "my_list.remove(\"hello\");",
+  "wrongAnswers": ["my_list.remove('hello')", "remove('hello', my_list)", "my_list.remove(0, 'hello')"]
+},
+{
+  "question": "my_list.clear()",
+  "answer": "my_list.clear();",
+  "wrongAnswers": ["my_list.clear", "my_list.removeAll()", "clear(my_list)"]
+}
+]

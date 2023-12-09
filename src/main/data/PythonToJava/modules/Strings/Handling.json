@@ -1,0 +1,52 @@
+[
+{
+  "question": "len(my_string)",
+  "answer": "my_string.length();",
+  "wrongAnswers": ["len(my_string)", "my_string.size()", "my_string.count()"]
+},
+{
+  "question": "my_string.upper()",
+  "answer": "my_string.toUpperCase();",
+  "wrongAnswers": ["my_string.uppercase()", "my_string.toUpper()", "my_string.toUpperString()"]
+},
+{
+  "question": "my_string.lower()",
+  "answer": "my_string.toLowerCase();",
+  "wrongAnswers": ["my_string.lowercase()", "my_string.toLower()", "my_string.toLowerString()"]
+},
+{
+  "question": "my_string.replace('old', 'new')",
+  "answer": "my_string.replace('old', 'new');",
+  "wrongAnswers": ["my_string.replaceAll('old', 'new')", "my_string.replace('new', 'old')", "my_string.replaceAll('new', 'old')"]
+},
+{
+  "question": "my_string.split(',')",
+  "answer": "my_string.split(',');",
+  "wrongAnswers": ["my_string.split(',')", "my_string.split(', ')", "my_string.split('. ')"]
+},
+{
+  "question": "len(my_string) > 10",
+  "answer": "my_string.length() > 10",
+  "wrongAnswers": ["len(my_string) > 10", "my_string.size() > 10", "my_string.count() > 10"]
+},
+{
+  "question": "my_string.startswith('Hello')",
+  "answer": "my_string.startsWith('Hello');",
+  "wrongAnswers": ["my_string.startsWith('hello')", "my_string.startWith('Hello')", "my_string.beginsWith('Hello')"]
+},
+{
+  "question": "my_string.endswith('.txt')",
+  "answer": "my_string.endsWith('.txt');",
+  "wrongAnswers": ["my_string.endsWith('txt')", "my_string.endWith('.txt')", "my_string.finishWith('.txt')"]
+},
+{
+  "question": "' '.join(my_list)",
+  "answer": "String.join(' ', my_list);",
+  "wrongAnswers": ["my_list.join(' ')", "String.join(my_list, ' ')", "my_list.join(separator=' '"]
+},
+{
+  "question": "my_string.strip()",
+  "answer": "my_string.trim();",
+  "wrongAnswers": ["my_string.strip()", "my_string.trimSpace()", "my_string.removeWhitespace()"]
+}
+]

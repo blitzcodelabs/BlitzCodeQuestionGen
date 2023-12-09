@@ -1,50 +1,50 @@
 [{
-  "question": "Python: if x > 5:",
-  "answer": "Java: if (x > 5) {",
-  "wrongAnswers": ["Java: if (x > 5)", "Java: if x > 5 {", "Java: if x > 5;"]
+  "question": "if x > 5:",
+  "answer": "if (x > 5) {",
+  "wrongAnswers": ["if (x > 5)", "if x > 5 {", "if x > 5;"]
 },
 {
-  "question": "Python: if x < 0 or x > 10:",
-  "answer": "Java: if (x < 0 || x > 10) {",
-  "wrongAnswers": ["Java: if (x < 0 && x > 10) {", "Java: if (x < 0 || x > 10)", "Java: if x < 0 || x > 10 {"]
+  "question": "if x < 0 or x > 10:",
+  "answer": "if (x < 0 || x > 10) {",
+  "wrongAnswers": ["if (x < 0 && x > 10) {", "if (x < 0 || x > 10)", "if x < 0 || x > 10 {"]
 },
 {
-  "question": "Python: if x == 'hello':",
-  "answer": "Java: if (x.equals(\"hello\")) {",
-  "wrongAnswers": ["Java: if (x.equals(\"hello\"))", "Java: if x.equals('hello') {", "Java: if x.equals(\"hello\") {"]
+  "question": "if x == 'hello':",
+  "answer": "if (x.equals(\"hello\")) {",
+  "wrongAnswers": ["if (x.equals(\"hello\"))", "if x.equals('hello') {", "if x.equals(\"hello\") {"]
 },
 {
-  "question": "Python: if x <= 100 and y != 0:",
-  "answer": "Java: if (x <= 100 && y != 0) {",
-  "wrongAnswers": ["Java: if (x <= 100 && y != 0)", "Java: if x <= 100 && y != 0 {", "Java: if x <= 100 & y != 0 {"]
+  "question": "if x <= 100 and y != 0:",
+  "answer": "if (x <= 100 && y != 0) {",
+  "wrongAnswers": ["if (x <= 100 && y != 0)", "if x <= 100 && y != 0 {", "if x <= 100 & y != 0 {"]
 },
 {
-  "question": "Python: if not flag:",
-  "answer": "Java: if (!flag) {",
-  "wrongAnswers": ["Java: if (!flag)", "Java: if !flag {", "Java: if flag {"]
+  "question": "if not flag:",
+  "answer": "if (!flag) {",
+  "wrongAnswers": ["if (!flag)", "if !flag {", "if flag {"]
 },
 {
-  "question": "Python: if x >= 5 and (y < 10 or z > 20):",
-  "answer": "Java: if (x >= 5 && (y < 10 || z > 20)) {",
-  "wrongAnswers": ["Java: if (x >= 5 && (y < 10 || z > 20))", "Java: if (x >= 5 && y < 10 || z > 20) {", "Java: if x >= 5 & (y < 10 || z > 20) {"]
+  "question": "if x >= 5 and (y < 10 or z > 20):",
+  "answer": "if (x >= 5 && (y < 10 || z > 20)) {",
+  "wrongAnswers": ["if (x >= 5 && (y < 10 || z > 20))", "if (x >= 5 && y < 10 || z > 20) {", "if x >= 5 & (y < 10 || z > 20) {"]
 },
 {
-  "question": "Python: if x != 'apple' or y == 0 and z > 5:",
-  "answer": "Java: if ((x.equals(\"apple\") != true) || (y == 0 && z > 5)) {",
-  "wrongAnswers": ["Java: if ((x.equals('apple') != true) || (y == 0 && z > 5)) {", "Java: if (x.equals(\"apple\") != true || y == 0 && z > 5) {", "Java: if (x.equals('apple') != true) || y == 0 && z > 5 {"]
+  "question": "if x != 'apple' or y == 0 and z > 5:",
+  "answer": "if ((x.equals(\"apple\") != true) || (y == 0 && z > 5)) {",
+  "wrongAnswers": ["if ((x.equals('apple') != true) || (y == 0 && z > 5)) {", "if (x.equals(\"apple\") != true || y == 0 && z > 5) {", "if (x.equals('apple') != true) || y == 0 && z > 5 {"]
 },
 {
-  "question": "Python: if not (x < 0 and y > 100):",
-  "answer": "Java: if (!((x < 0) && (y > 100))) {",
-  "wrongAnswers": ["Java: if ((x < 0) && (y > 100) != true) {", "Java: if !((x < 0) && (y > 100)) {", "Java: if !((x < 0 && y > 100)) {"]
+  "question": "if not (x < 0 and y > 100):",
+  "answer": "f (!((x < 0) && (y > 100))) {",
+  "wrongAnswers": ["if ((x < 0) && (y > 100) != true) {", "if !((x < 0) && (y > 100)) {", "if !((x < 0 && y > 100)) {"]
 },
 {
-  "question": "Python: if x % 2 == 0 or y % 2 == 0:",
-  "answer": "Java: if ((x % 2 == 0) || (y % 2 == 0)) {",
-  "wrongAnswers": ["Java: if ((x % 2 == 0) || (y % 2 == 0))", "Java: if (x % 2 == 0 || y % 2 == 0) {", "Java: if x % 2 == 0 or y % 2 == 0 {"]
+  "question": "if x % 2 == 0 or y % 2 == 0:",
+  "answer": "if ((x % 2 == 0) || (y % 2 == 0)) {",
+  "wrongAnswers": ["if ((x % 2 == 0) || (y % 2 == 0))", "if (x % 2 == 0 || y % 2 == 0) {", "if x % 2 == 0 or y % 2 == 0 {"]
 },
 {
-  "question": "Python: if x > 0 and not y < 10:",
-  "answer": "Java: if (x > 0 && !(y < 10)) {",
-  "wrongAnswers": ["Java: if (x > 0 && !(y < 10))", "Java: if x > 0 && !(y < 10) {", "Java: if x > 0 && not y < 10 {"]
+  "question": "if x > 0 and not y < 10:",
+  "answer": "if (x > 0 && !(y < 10)) {",
+  "wrongAnswers": ["if (x > 0 && !(y < 10))", "if x > 0 && !(y < 10) {", "if x > 0 && not y < 10 {"]
 }]

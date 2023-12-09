@@ -1,0 +1,40 @@
+[{
+  "question": "str.capitalize()",
+  "answer": "Character.toUpperCase(str.charAt(0)) + str.substring(1);",
+  "wrongAnswers": ["str.charAt(0).toUpperCase() + str.substring(1)", "Character.toUpperCase(str.charAt(0)) + str.substr(1)", "str.charAt(0) + str.substring(1).toUpperCase()"]
+},
+{
+  "question": "str.lower()",
+  "answer": "str.toLowerCase();",
+  "wrongAnswers": ["str.toLocaleLowerCase()", "str.toUpperCase()", "str.toLocaleUpperCase()"]
+},
+{
+  "question": "str.upper()",
+  "answer": "str.toUpperCase();",
+  "wrongAnswers": ["str.toLocaleUpperCase()", "str.toLowerCase()", "str.toLocaleLowerCase()"]
+},
+{
+  "question": "str.isalpha()",
+  "answer": "str.matches(\"[a-zA-Z]+\");",
+  "wrongAnswers": ["Character.isLetter(str.charAt(0)) && str.substring(1).matches(\"[a-zA-Z]+\");", "str.matches(\"[a-zA-Z]+\") && str.substring(1).matches(\"[a-zA-Z]+\");", "str.charAt(0).matches(\"[a-zA-Z]+\"); && str.substring(1).matches(\"[a-zA-Z]+\");"]
+},
+{
+  "question": "str.isdigit()",
+  "answer": "str.matches(\"\\d+\");",
+  "wrongAnswers": ["Character.isDigit(str.charAt(0)) && str.substring(1).matches(\"\\d+\");", "str.matches(\"\\d+\") && str.substring(1).matches(\"\\d+\");", "str.charAt(0).matches(\"\\d+\"); && str.substring(1).matches(\"\\d+\");"]
+},
+{
+  "question": "str.split()",
+  "answer": "str.split(\" \");",
+  "wrongAnswers": ["str.split(\"\");", "str.split(\"\", -1);", "str.split(\"\", 0);"]
+},
+{
+  "question": "str.join()",
+  "answer": "String.join(\"\", str);",
+  "wrongAnswers": ["str.join(\"\", \",\");", "String.join(\",\", str);", "str.join(\",\");"]
+},
+{
+  "question": "str.replace()",
+  "answer": "str.replace(oldStr, newStr);",
+  "wrongAnswers": ["str.replaceAll(oldStr, newStr);", "str.replaceFirst(oldStr, newStr);", "str.replace(oldChar, newChar);"]
+}]

@@ -1,0 +1,50 @@
+[{
+  "question": "stack.append(element)",
+  "answer": "stack.push(element);",
+  "wrongAnswers": ["stack.add(element)", "stack.insert(element)", "stack.put(element)"]
+},
+{
+  "question": "stack.pop()",
+  "answer": "stack.pop();",
+  "wrongAnswers": ["stack.remove()", "stack.delete()", "stack.extract()"]
+},
+{
+  "question": "stack[-1]",
+  "answer": "stack.peek();",
+  "wrongAnswers": ["stack.top()", "stack.peek()", "stack.current()"]
+},
+{
+  "question": "len(stack)",
+  "answer": "stack.size();",
+  "wrongAnswers": ["stack.length()", "stack.count()", "stack.total()"]
+},
+{
+  "question": "stack.clear()",
+  "answer": "stack.clear();",
+  "wrongAnswers": ["stack.empty()", "stack.delete()", "stack.remove()"]
+},
+{
+  "question": "stack.reverse()",
+  "answer": "Collections.reverse(stack);",
+  "wrongAnswers": ["Collections.sort(stack);", "stack.sort();", "stack.shuffle();"]
+},
+{
+  "question": "stack.count(element)",
+  "answer": "Collections.frequency(stack, element);",
+  "wrongAnswers": ["stack.count(element)", "stack.find(element)", "stack.search(element)"]
+},
+{
+  "question": "stack.index(element)",
+  "answer": "stack.indexOf(element);",
+  "wrongAnswers": ["stack.index(element)", "stack.position(element)", "stack.searchIndex(element)"]
+},
+{
+  "question": "stack.extend(stack2)",
+  "answer": "stack.addAll(stack2);",
+  "wrongAnswers": ["stack.concat(stack2)", "stack.merge(stack2)", "stack.combine(stack2)"]
+},
+{
+  "question": "stack.copy()",
+  "answer": "Stack<String> newStack = new Stack<String>();\nnewStack.addAll(stack);",
+  "wrongAnswers": ["Stack<String> newStack = stack;", "Stack newStack = stack.clone();", "Stack<String> newStack = stack.copy();"]
+}]

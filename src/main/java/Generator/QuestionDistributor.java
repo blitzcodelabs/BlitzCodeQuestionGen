@@ -1,9 +1,6 @@
 package Generator;
 
 import Format.QuestionPrompter;
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -27,8 +24,8 @@ public class QuestionDistributor {
     }
     public static void main(String[] args){
         var distributor = new QuestionDistributor();
-        distributor.distribute("src/main/data/JavaToPython/modules/Decision Making/Conditionals.json", "python", "java", "conditional statements");
-        distributor.distribute("src/main/data/PythonToJava/modules/Decision Making/Conditionals.json", "java", "python", "conditional statements");
+        distributor.distribute("src/main/data/JavaToPython/modules/Data Structures I/Stacks.json", "python", "java", "stacks data structures");
+        distributor.distribute("src/main/data/PythonToJava/modules/Data Structures I/Stacks.json", "java", "python", "stacks data structures");
     }
 
 }

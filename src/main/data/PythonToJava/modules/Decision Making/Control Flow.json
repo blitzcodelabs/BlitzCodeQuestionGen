@@ -1,0 +1,50 @@
+[{
+  "question": "if a < b:",
+  "answer": "if (a < b) {",
+  "wrongAnswers": ["if (b < a) {", "if a > b {", "if (b > a) {"]
+},
+{
+  "question": "while i < 10:",
+  "answer": "while (i < 10) {",
+  "wrongAnswers": ["while i > 10 {", "while (10 < i) {", "while i < 11 {"]
+},
+{
+  "question": "for i in range(5):",
+  "answer": "for (int i = 0; i < 5; i++) {",
+  "wrongAnswers": ["for (i = 0; i < 5; i++) {", "for i in range(0, 5):", "for (int i = 5; i >= 0; i--) {"]
+},
+{
+  "question": "if x == 0 or y == 0:",
+  "answer": "if (x == 0 || y == 0) {",
+  "wrongAnswers": ["if (x == 0 && y == 0) {", "if (0 == x || 0 == y) {", "if (0 == x and 0 == y) {"]
+},
+{
+  "question": "if score >= 70 and score <= 100:",
+  "answer": "if (score >= 70 && score <= 100) {",
+  "wrongAnswers": ["if (score >= 70 || score <= 100) {", "if (score <= 70 && score >= 100) {", "if (score <= 100 && score >= 70) {"]
+},
+{
+  "question": "if condition:",
+  "answer": "if (condition) {",
+  "wrongAnswers": ["if (!condition) {", "if condition {", "if (condition == true) {"]
+},
+{
+  "question": "elif x > 0:",
+  "answer": "} else if (x > 0) {",
+  "wrongAnswers": ["} else if (0 < x) {", "} else if (x < 0) {", "} else if (x >= 0) {"]
+},
+{
+  "question": "else:",
+  "answer": "} else {",
+  "wrongAnswers": ["} else if {", "else {", "else if {"]
+},
+{
+  "question": "switch(choice):",
+  "answer": "switch (choice) {",
+  "wrongAnswers": ["select case choice {", "if (choice) {", "choose {"]
+},
+{
+  "question": "case 1:",
+  "answer": "case 1: ",
+  "wrongAnswers": ["case x == 1: ", "case 1 {", "case selection == 1: "]
+}]

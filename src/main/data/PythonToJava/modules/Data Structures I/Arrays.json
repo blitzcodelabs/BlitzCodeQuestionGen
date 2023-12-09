@@ -1,0 +1,52 @@
+[
+{
+  "question": "numbers = [1, 2, 3, 4, 5]",
+  "answer": "int[] numbers = {1, 2, 3, 4, 5};",
+  "wrongAnswers": ["int[] numbers = new int[] {1, 2, 3, 4, 5}", "int[] numbers = [1, 2, 3, 4, 5];", "Integer[] numbers = {1, 2, 3, 4, 5};"]
+},
+{
+  "question": "names = [\"Alice\", \"Bob\", \"Charlie\"]",
+  "answer": "String[] names = {\"Alice\", \"Bob\", \"Charlie\"};",
+  "wrongAnswers": ["String[] names = ['Alice', 'Bob', 'Charlie'];", "String[] names = {'Alice', 'Bob', 'Charlie'};", "String names = {'Alice', 'Bob', 'Charlie'};"]
+},
+{
+  "question": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]",
+  "answer": "int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};",
+  "wrongAnswers": ["int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];", "int[] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};", "int[][] matrix = new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};"]
+},
+{
+  "question": "fruits = ['Apple', 'Banana', 'Orange']",
+  "answer": "String[] fruits = {\"Apple\", \"Banana\", \"Orange\"};",
+  "wrongAnswers": ["String[] fruits = ['Apple', 'Banana', 'Orange'];", "String[] fruits = {'Apple', 'Banana', 'Orange'};", "String fruits = {'Apple', 'Banana', 'Orange'};"]
+},
+{
+  "question": "temperatures = [10.5, 20.3, 15.8, 22.1]",
+  "answer": "double[] temperatures = {10.5, 20.3, 15.8, 22.1};",
+  "wrongAnswers": ["double[] temperatures = new double[] {10.5, 20.3, 15.8, 22.1}", "double[] temperatures = [10.5, 20.3, 15.8, 22.1];", "Double[] temperatures = {10.5, 20.3, 15.8, 22.1};"]
+},
+{
+  "question": "empty_array = []",
+  "answer": "int[] empty_array = {};",
+  "wrongAnswers": ["int[] empty_array = [];", "int empty_array = {}", "Int[] empty_array = new int[0];"]
+},
+{
+  "question": "mixed = [1, 'Hello', True]",
+  "answer": "Object[] mixed = {1, \"Hello\", true};",
+  "wrongAnswers": ["Object[] mixed = {1, 'Hello', true};", "Object[] mixed = [1, 'Hello', true];", "Object mixed = {1, 'Hello', true};"]
+},
+{
+  "question": "grid = [[1, 2], [3, 4, 5], [6]]",
+  "answer": "int[][] grid = {{1, 2}, {3, 4, 5}, {6}};",
+  "wrongAnswers": ["int[][] grid = [[1, 2], [3, 4, 5], [6]];", "int[] grid = {{1, 2}, {3, 4, 5}, {6}};", "int[][] grid = new int[][] {{1, 2}, {3, 4, 5}, {6}}"]
+},
+{
+  "question": "words = ['Hello', 'World']",
+  "answer": "String[] words = {\"Hello\", \"World\"};",
+  "wrongAnswers": ["String[] words = ['Hello', 'World'];", "String[] words = {'Hello', 'World'};", "String words = {'Hello', 'World'};"]
+},
+{
+  "question": "nested = [[1, [2, 3]], [4, [5, 6]]]",
+  "answer": "Object[][] nested = {{1, {2, 3}}, {4, {5, 6}}};",
+  "wrongAnswers": ["Object[][] nested = [[1, [2, 3]], [4, [5, 6]]];", "Object[] nested = {{1, {2, 3}}, {4, {5, 6}}};", "Object[][] nested = new Object[][] {{1, [2, 3]], [4, [5, 6]]}"]
+}
+]

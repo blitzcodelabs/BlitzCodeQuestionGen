@@ -1,0 +1,41 @@
+[{
+  "question": "while x < 5:\n    print(x)\n    x += 1",
+  "answer": "int x = 0;\nwhile (x < 5) {\n    System.out.println(x);\n    x++;\n}",
+  "wrongAnswers": ["for (int x = 0; x < 5; x++) {\n    System.out.println(x);\n}", "int x = 0;\ndo {\n    System.out.println(x);\n    x++;\n} while (x < 5);", "int x = 0;\nfor (; x < 5; x++) {\n    System.out.println(x);\n}"]
+},{
+  "question": "while True:\n    print('Infinite loop')",
+  "answer": "while (true) {\n    System.out.println(\"Infinite loop\");\n}",
+  "wrongAnswers": ["do {\n    System.out.println(\"Infinite loop\");\n} while (true);", "for (; ; ) {\n    System.out.println(\"Infinite loop\");\n}", "while () {\n    System.out.println(\"Infinite loop\");\n}"]
+},{
+  "question": "while condition == True:\n    print('Condition is True')",
+  "answer": "while (condition == true) {\n    System.out.println(\"Condition is True\");\n}",
+  "wrongAnswers": ["do {\n    System.out.println(\"Condition is True\");\n} while (condition == true);", "for (; condition == true; ) {\n    System.out.println(\"Condition is True\");\n}", "while () {\n    System.out.println(\"Condition is True\");\n}"]
+},{
+  "question": "while x != 10:\n    x += 2",
+  "answer": "int x = 0;\nwhile (x != 10) {\n    x += 2;\n}",
+  "wrongAnswers": ["do {\n    x += 2;\n} while (x != 10);", "for (int x = 0; x < 10; x += 2) {\n}", "while (x < 10) {\n    x += 2;\n}"]
+},{
+  "question": "while x > 0:\n    print('Positive number')",
+  "answer": "int x = 0;\nwhile (x > 0) {\n    System.out.println(\"Positive number\");\n}",
+  "wrongAnswers": ["do {\n    System.out.println(\"Positive number\");\n} while (x > 0);", "for (; x > 0; ) {\n    System.out.println(\"Positive number\");\n}", "while () {\n    System.out.println(\"Positive number\");\n}"]
+},{
+  "question": "while x <= 100:\n    x += 10",
+  "answer": "int x = 0;\nwhile (x <= 100) {\n    x += 10;\n}",
+  "wrongAnswers": ["do {\n    x += 10;\n} while (x <= 100);", "for (int x = 0; x <= 100; x += 10) {\n}", "while (x < 100) {\n    x += 10;\n}"]
+},{
+  "question": "while count < 5:\n    print('Count:', count)\n    count += 1",
+  "answer": "int count = 0;\nwhile (count < 5) {\n    System.out.println(\"Count: \" + count);\n    count++;\n}",
+  "wrongAnswers": ["do {\n    System.out.println(\"Count: \" + count);\n    count++;\n} while (count < 5);", "for (; count < 5; count++) {\n    System.out.println(\"Count: \" + count);\n}", "while () {\n    System.out.println(\"Count: \" + count);\n    count++;\n}"]
+},{
+  "question": "while num >= 0:\n    num -= 1",
+  "answer": "int num = 0;\nwhile (num >= 0) {\n    num--;\n}",
+  "wrongAnswers": ["do {\n    num--;\n} while (num >= 0);", "for (int num = 0; num >= 0; num--) {\n}", "while (num > 0) {\n    num--;\n}"]
+},{
+  "question": "while option != 'quit':\n    option = input('Enter an option: ')",
+  "answer": "String option = \"\";\nwhile (!option.equals(\"quit\")) {\n    option = input(\"Enter an option: \");\n}",
+  "wrongAnswers": ["do {\n    option = input(\"Enter an option: \");\n} while (!option.equals(\"quit\"));", "for (; option != \"quit\"; ) {\n    option = input(\"Enter an option: \");\n}", "while () {\n    option = input(\"Enter an option: \");\n}"]
+},{
+  "question": "while index < len(items):\n    print(items[index])\n    index += 1",
+  "answer": "int index = 0;\nwhile (index < items.length) {\n    System.out.println(items[index]);\n    index++;\n}",
+  "wrongAnswers": ["do {\n    System.out.println(items[index]);\n    index++;\n} while (index < items.length);", "for (int index = 0; index < len(items); index++) {\n    System.out.println(items[index]);\n}", "while () {\n    System.out.println(items[index]);\n    index++;\n}"]
+}]

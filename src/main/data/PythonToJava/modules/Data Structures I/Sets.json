@@ -1,0 +1,52 @@
+[
+{
+  "question": "set1 = {1, 2, 3}",
+  "answer": "Set<Integer> set1 = new HashSet<>(Arrays.asList(1, 2, 3));",
+  "wrongAnswers": ["Set set1 = new HashSet();", "Set<Integer> set1 = new HashSet<Integer>({1, 2, 3});", "Set<Integer> set1 = new HashSet<>(1, 2, 3);"]
+},
+{
+  "question": "set2 = set1.copy()",
+  "answer": "Set<Integer> set2 = new HashSet<>(set1);",
+  "wrongAnswers": ["Set<Integer> set2 = set1.copy();", "Set<Integer> set2 = set1.clone();", "Set<Integer> set2 = new HashSet<>(set1.copy());"]
+},
+{
+  "question": "set3 = set1.union(set2)",
+  "answer": "Set<Integer> set3 = new HashSet<>(set1);\nset3.addAll(set2);",
+  "wrongAnswers": ["Set<Integer> set3 = set1 + set2;", "Set<Integer> set3 = set1.union(set2);", "Set<Integer> set3 = set1.union(set2).copy();"]
+},
+{
+  "question": "len(set1)",
+  "answer": "set1.size();",
+  "wrongAnswers": ["len(set1)", "set1.length()", "set1.count()"]
+},
+{
+  "question": "set1.add(4)",
+  "answer": "set1.add(4);",
+  "wrongAnswers": ["set1.append(4);", "set1.insert(4);", "set1.push(4);"]
+},
+{
+  "question": "set1.remove(3)",
+  "answer": "set1.remove(3);",
+  "wrongAnswers": ["set1.pop(3);", "set1.delete(3);", "set1.remove(2);"]
+},
+{
+  "question": "set1.discard(3)",
+  "answer": "set1.remove(3);",
+  "wrongAnswers": ["set1.discard(3);", "set1.remove(2);", "set1.delete(3);"]
+},
+{
+  "question": "set1.clear()",
+  "answer": "set1.clear();",
+  "wrongAnswers": ["set1 = {};", "set1.empty();", "delete set1;"]
+},
+{
+  "question": "set1.update(set2)",
+  "answer": "set1.addAll(set2);",
+  "wrongAnswers": ["set1.update(set2);", "set1.add(set2);", "set1.union(set2);"]
+},
+{
+  "question": "set1.intersection(set2)",
+  "answer": "Set<Integer> intersection = new HashSet<>(set1);\nintersection.retainAll(set2);",
+  "wrongAnswers": ["Set<Integer> intersection = set1.intersection(set2);", "Set<Integer> intersection = new HashSet<>(set1, set2);", "Set<Integer> intersection = new HashSet<>(set1 & set2);"]
+}
+]

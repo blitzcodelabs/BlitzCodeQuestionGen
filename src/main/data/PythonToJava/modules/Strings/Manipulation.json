@@ -1,0 +1,41 @@
+[{
+  "question": "len(my_string)",
+  "answer": "my_string.length();",
+  "wrongAnswers": ["length(my_string)", "len(my_string.length())", "my_string.len()"]
+},{
+  "question": "my_string.lower()",
+  "answer": "my_string.toLowerCase();",
+  "wrongAnswers": ["tolower(my_string)", "my_string.toLower()", "my_string.lowerCase()"]
+},{
+  "question": "my_string.upper()",
+  "answer": "my_string.toUpperCase();",
+  "wrongAnswers": ["tolower(my_string)", "my_string.toUpper()", "my_string.upperCase()"]
+},{
+  "question": "my_string.strip()",
+  "answer": "my_string.trim();",
+  "wrongAnswers": ["trim(my_string)", "my_string.stripWhitespace()", "my_string.trimWhitespace()"]
+},{
+  "question": "my_string.replace('a', 'b')",
+  "answer": "my_string.replace('a', 'b');",
+  "wrongAnswers": ["my_string.substitute('a', 'b')", "replace(my_string, 'a', 'b')", "my_string.replace('b', 'a')"]
+},{
+  "question": "my_string.split(',')",
+  "answer": "my_string.split(',');",
+  "wrongAnswers": ["split(my_string, ',')", "my_string.explode(',')", "my_string.dividedBy(',')"]
+},{
+  "question": "'Hello' + my_string",
+  "answer": "\"Hello\" + my_string;",
+  "wrongAnswers": ["'Hello'.concat(my_string)", "concat('Hello', my_string)", "'Hello' + toString(my_string)"]
+},{
+  "question": "my_string.join(['a', 'b'])",
+  "answer": "\"\".join(['a', 'b']);",
+  "wrongAnswers": ["join(['a', 'b'], my_string)", "my_string.join(['a', 'b'])", "my_string.join('a', 'b')"]
+},{
+  "question": "my_string.startswith('Prefix')",
+  "answer": "my_string.startsWith(\"Prefix\");",
+  "wrongAnswers": ["startswith(my_string, 'Prefix')", "my_string.starts(\"Prefix\")", "my_string.beginsWith('Prefix')"]
+},{
+  "question": "my_string.endswith('Suffix')",
+  "answer": "my_string.endsWith(\"Suffix\");",
+  "wrongAnswers": ["endswith(my_string, 'Suffix')", "my_string.ends(\"Suffix\")", "my_string.finishesWith('Suffix')"]
+}]
