@@ -24,8 +24,8 @@ public class QuestionDistributor {
     }
     public static void main(String[] args){
         var distributor = new QuestionDistributor();
-        distributor.distribute("src/main/data/JavaToPython/modules/Data Structures I/Stacks.json", "python", "java", "stacks data structures");
-        distributor.distribute("src/main/data/PythonToJava/modules/Data Structures I/Stacks.json", "java", "python", "stacks data structures");
+        //distributor.distribute("src/main/data/JavaToPython/modules/Data Structures I/Stacks.json", "python", "java", "stacks data structures");
+        //distributor.distribute("src/main/data/PythonToJava/modules/Data Structures I/Stacks.json", "java", "python", "stacks data structures");
     }
 
 }
