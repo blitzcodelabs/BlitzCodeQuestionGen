@@ -20,3 +20,9 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
 	implementation 'com.theokanning.openai-gpt3-java:service:0.18.2'
 }
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.shell:spring-shell-dependencies:3.1.6"
+	}
+}
