@@ -41,7 +41,7 @@ public class GenerateCommand {
 
         QuestionDistributor distributor = new QuestionDistributor();
         System.out.println("Generating question... Please wait.");
-        Optional<String> questions = distributor.distribute("src/main/data/adminQuestions/adminQuestion.json", targetLang, srcLang, lesson);
+        Optional<String> questions = distributor.distribute("src/main/data/adminQuestions/adminQuestion.json", numOfQuestions, targetLang, srcLang, lesson);
         if(upload.equals("y")){
             if(questions.isPresent()){
                 try {
