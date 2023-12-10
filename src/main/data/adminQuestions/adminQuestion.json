@@ -1,0 +1,50 @@
+[{
+  "question": "Translate the following Java code to Python: Optional<String> optional = Optional.of(\"Hello World\");",
+  "answer": "optional = \"Hello World\"",
+  "wrongAnswers": ["optional = Optional(\"Hello World\")", "optional = Optional.of(\"Hello World\").get()", "optional = \"Hello World\".get()"]
+},
+{
+  "question": "Translate the following Java code to Python: Optional<Integer> optional = Optional.empty();",
+  "answer": "optional = None",
+  "wrongAnswers": ["optional = Optional.empty()", "optional = Optional()", "optional = Optional.of(None)"]
+},
+{
+  "question": "Translate the following Java code to Python: Optional<Boolean> optional = Optional.ofNullable(true);",
+  "answer": "optional = True",
+  "wrongAnswers": ["optional = Optional(True)", "optional = Optional.ofNullable(True)", "optional = Optional.of(True)"]
+},
+{
+  "question": "Translate the following Java code to Python: String value = optional.orElse(\"Default Value\");",
+  "answer": "value = optional if optional else \"Default Value\"",
+  "wrongAnswers": ["value = optional.orElseGet(\"Default Value\")", "value = optional.orElse(\"Default Value\")", "value = optional.orElseGet(lambda: \"Default Value\")"]
+},
+{
+  "question": "Translate the following Java code to Python: String value = optional.orElseGet(() -> \"Default Value\");",
+  "answer": "value = optional if optional else \"Default Value\"",
+  "wrongAnswers": ["value = optional.orElse(\"Default Value\")", "value = optional.orElseGet(\"Default Value\")", "value = optional.orElseGet(lambda: \"Default Value\")"]
+},
+{
+  "question": "Translate the following Java code to Python: boolean isPresent = optional.isPresent();",
+  "answer": "isPresent = bool(optional)",
+  "wrongAnswers": ["isPresent = optional.isSet()", "isPresent = optional.isPresent()", "isPresent = optional"]
+},
+{
+  "question": "Translate the following Java code to Python: optional.ifPresent(value -> System.out.println(value));",
+  "answer": "print(optional) if optional else None",
+  "wrongAnswers": ["print(value) if value else None", "if optional: print(value)", "if optional: print(optional)"]
+},
+{
+  "question": "Translate the following Java code to Python: optional.map(value -> value.length());",
+  "answer": "optional.map(len)",
+  "wrongAnswers": ["optional.map(value.length())", "optional.map(len())", "optional.map(len(value))"]
+},
+{
+  "question": "Translate the following Java code to Python: optional.filter(value -> value.length() > 5);",
+  "answer": "optional.filter(lambda value: len(value) > 5)",
+  "wrongAnswers": ["optional.filter(len(value) > 5)", "optional.filter(lambda value: value.length() > 5)", "optional.filter(len(value) > 5)"]
+},
+{
+  "question": "Translate the following Java code to Python: String value = optional.orElseThrow();",
+  "answer": "value = optional if optional else None",
+  "wrongAnswers": ["value = optional.throw() if optional else None", "value = optional.orElseThrow()", "value = optional.orElse(None)"]
+}]
