@@ -6,6 +6,7 @@ import org.blitzcode.editor.model.Question;
 import org.blitzcode.editor.repository.LessonRepository;
 import org.blitzcode.editor.repository.ModuleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.InvalidDataAccessResourceUsageException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.Optional;
 @Service
 public class ModuleController {
     @Autowired
-    private ModuleRepository moduleRepository;
+    public ModuleRepository moduleRepository;
     @Autowired
     private LessonRepository lessonRepository;
 
@@ -59,13 +60,19 @@ public class ModuleController {
     }
 
     public Module findModuleByName(String name){
-        Optional<Module> module = moduleRepository.findModuleByName(name);
-        return module.orElse(null);
+        try{
+            return moduleRepository.findModuleByName(name).get();
+        }catch (InvalidDataAccessResourceUsageException e){
+            return null;
+        }
     }
 
     public Lesson findLessonByName(String name){
-        Optional<Lesson> module = lessonRepository.findLessonByName(name);
-        return module.orElse(null);
+        try{
+            return lessonRepository.findLessonByName(name).get();
+        }catch (InvalidDataAccessResourceUsageException e){
+            return null;
+        }
     }
 
 }

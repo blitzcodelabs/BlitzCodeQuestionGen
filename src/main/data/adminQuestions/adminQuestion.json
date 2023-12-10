@@ -1,52 +1,50 @@
-[
-{
-  "question": "System.out.println(\"Hello, World!\");",
-  "answer": "print(\"Hello, World!\")",
-  "wrongAnswers": ["print(\"Hello, World!\");", "print(\"Hello, World!\")", "System.out.print(\"Hello, World!\")"]
+[{
+  "question": "Translate the following Java code to Python: Optional<String> optional = Optional.of(\"Hello World\");",
+  "answer": "optional = \"Hello World\"",
+  "wrongAnswers": ["optional = Optional(\"Hello World\")", "optional = Optional.of(\"Hello World\").get()", "optional = \"Hello World\".get()"]
 },
 {
-  "question": "System.out.print(5);",
-  "answer": "print(5)",
-  "wrongAnswers": ["print(5);", "System.out.print(5);", "print(\"5\")"]
+  "question": "Translate the following Java code to Python: Optional<Integer> optional = Optional.empty();",
+  "answer": "optional = None",
+  "wrongAnswers": ["optional = Optional.empty()", "optional = Optional()", "optional = Optional.of(None)"]
 },
 {
-  "question": "System.out.println(3.14);",
-  "answer": "print(3.14)",
-  "wrongAnswers": ["print(3.14);", "System.out.print(3.14);", "print(\"3.14\")"]
+  "question": "Translate the following Java code to Python: Optional<Boolean> optional = Optional.ofNullable(true);",
+  "answer": "optional = True",
+  "wrongAnswers": ["optional = Optional(True)", "optional = Optional.ofNullable(True)", "optional = Optional.of(True)"]
 },
 {
-  "question": "System.out.println(\"Hello\"); System.out.println(\"World!\");",
-  "answer": "print(\"Hello\")\nprint(\"World!\")",
-  "wrongAnswers": ["System.out.println(\"Hello\");\nSystem.out.println(\"World!\")", "print(\"Hello\"), print(\"World!\")", "print(\"Hello\", \"World!\")"]
+  "question": "Translate the following Java code to Python: String value = optional.orElse(\"Default Value\");",
+  "answer": "value = optional if optional else \"Default Value\"",
+  "wrongAnswers": ["value = optional.orElseGet(\"Default Value\")", "value = optional.orElse(\"Default Value\")", "value = optional.orElseGet(lambda: \"Default Value\")"]
 },
 {
-  "question": "System.out.printf(\"%d is an integer\", 7);",
-  "answer": "print(\"%d is an integer\" % 7)",
-  "wrongAnswers": ["print(\"%d is an integer\", 7);", "System.out.printf(\"%d is an integer\", 7);", "print(\"7 is an integer\")"]
+  "question": "Translate the following Java code to Python: String value = optional.orElseGet(() -> \"Default Value\");",
+  "answer": "value = optional if optional else \"Default Value\"",
+  "wrongAnswers": ["value = optional.orElse(\"Default Value\")", "value = optional.orElseGet(\"Default Value\")", "value = optional.orElseGet(lambda: \"Default Value\")"]
 },
 {
-  "question": "System.out.println(\"I am \" + age + \" years old\");",
-  "answer": "print(\"I am \" + str(age) + \" years old\")",
-  "wrongAnswers": ["print(\"I am \" + age + \" years old\");", "System.out.println(\"I am \" + str(age) + \" years old\")", "print(\"I am \" + age.toString() + \" years old\")"]
+  "question": "Translate the following Java code to Python: boolean isPresent = optional.isPresent();",
+  "answer": "isPresent = bool(optional)",
+  "wrongAnswers": ["isPresent = optional.isSet()", "isPresent = optional.isPresent()", "isPresent = optional"]
 },
 {
-  "question": "System.out.println(true);",
-  "answer": "print(True)",
-  "wrongAnswers": ["print(true)", "System.out.println(True)", "print(\"true\")"]
+  "question": "Translate the following Java code to Python: optional.ifPresent(value -> System.out.println(value));",
+  "answer": "print(optional) if optional else None",
+  "wrongAnswers": ["print(value) if value else None", "if optional: print(value)", "if optional: print(optional)"]
 },
 {
-  "question": "System.out.println(5 > 3);",
-  "answer": "print(5 > 3)",
-  "wrongAnswers": ["print(5 > 3);", "System.out.println(5 > 3);", "print(True)"]
+  "question": "Translate the following Java code to Python: optional.map(value -> value.length());",
+  "answer": "optional.map(len)",
+  "wrongAnswers": ["optional.map(value.length())", "optional.map(len())", "optional.map(len(value))"]
 },
 {
-  "question": "System.out.println(6 >= 6);",
-  "answer": "print(6 >= 6)",
-  "wrongAnswers": ["print(6 >= 6);", "System.out.println(6 >= 6);", "print(True)"]
+  "question": "Translate the following Java code to Python: optional.filter(value -> value.length() > 5);",
+  "answer": "optional.filter(lambda value: len(value) > 5)",
+  "wrongAnswers": ["optional.filter(len(value) > 5)", "optional.filter(lambda value: value.length() > 5)", "optional.filter(len(value) > 5)"]
 },
 {
-  "question": "System.out.println(\"I have \" + numApples + \" apples\");",
-  "answer": "print(\"I have \" + str(numApples) + \" apples\")",
-  "wrongAnswers": ["print(\"I have \" + numApples + \" apples\");", "System.out.println(\"I have \" + str(numApples) + \" apples\")", "print(\"I have \" + numApples.toString() + \" apples\")"]
-}
-]
+  "question": "Translate the following Java code to Python: String value = optional.orElseThrow();",
+  "answer": "value = optional if optional else None",
+  "wrongAnswers": ["value = optional.throw() if optional else None", "value = optional.orElseThrow()", "value = optional.orElse(None)"]
+}]

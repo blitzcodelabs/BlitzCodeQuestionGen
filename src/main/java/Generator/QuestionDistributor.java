@@ -4,10 +4,11 @@ import Format.QuestionPrompter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Optional;
 
 public class QuestionDistributor {
 
-    public void distribute(String filePath, String targetLang, String srcLang, String topic){
+    public Optional<String> distribute(String filePath, String targetLang, String srcLang, String topic){
         var gen = new ChatResponse();
         var prompter = new QuestionPrompter();
         String prompt = prompter.createPrompt(targetLang, srcLang, topic);
@@ -17,10 +18,12 @@ public class QuestionDistributor {
             var path = Path.of(filePath);
             Files.createDirectories(path.getParent());
             Files.writeString(path, questions);
+            return questions.describeConstable();
         } catch (IOException e) {
             System.err.println("Error writing JSON to the file: " + e.getMessage());
             e.printStackTrace();
         }
+        return Optional.empty();
     }
     public static void main(String[] args){
         var distributor = new QuestionDistributor();
