@@ -17,7 +17,7 @@ public class ModuleController {
     @Autowired
     public ModuleRepository moduleRepository;
     @Autowired
-    private LessonRepository lessonRepository;
+    public LessonRepository lessonRepository;
 
     public List<Module> getAllModules() {
         return moduleRepository.findAll();
@@ -61,7 +61,8 @@ public class ModuleController {
 
     public Module findModuleByName(String name){
         try{
-            return moduleRepository.findModuleByName(name).get();
+            Optional<Module> module = moduleRepository.findModuleByName(name);
+            return module.orElse(null);
         }catch (InvalidDataAccessResourceUsageException e){
             return null;
         }
@@ -69,7 +70,8 @@ public class ModuleController {
 
     public Lesson findLessonByName(String name){
         try{
-            return lessonRepository.findLessonByName(name).get();
+            Optional<Lesson> lesson = lessonRepository.findLessonByName(name);
+            return lesson.orElse(null);
         }catch (InvalidDataAccessResourceUsageException e){
             return null;
         }
