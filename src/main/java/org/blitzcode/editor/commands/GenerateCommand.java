@@ -88,7 +88,8 @@ public class GenerateCommand {
         }
 
         if(newLesson.getQuestions() != null){
-            newLesson.getQuestions().addAll(questionList);
+            List<Question> questionsByLessonId = moduleController.lessonRepository.findQuestionsByLessonId(newLesson.getId());
+            questionsByLessonId.addAll(questionList);
         }else{
             newLesson.setQuestions(questionList);
         }
@@ -97,6 +98,7 @@ public class GenerateCommand {
             Module newModule = new Module();
             newModule.setName(module);
             newLesson.setModule(newModule);
+            newModule.setLessons(List.of(newLesson));
             moduleController.moduleRepository.save(newModule);
         }else{
             if(!existingModule.getLessons().contains(newLesson)){
