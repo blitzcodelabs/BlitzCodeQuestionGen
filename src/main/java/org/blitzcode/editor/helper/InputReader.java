@@ -1,7 +1,9 @@
 package org.blitzcode.editor.helper;
 
 import org.jline.reader.LineReader;
-
+/**
+ * This class implements a java library to handle console input to create an InputReader.
+ */
 public class InputReader {
 
     private static final Character DEFAULT_MASK = '*';

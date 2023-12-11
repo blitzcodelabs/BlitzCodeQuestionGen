@@ -18,7 +18,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-
+/**
+ * This class uses spring shell to allow an Admin UI for generating questions
+ */
 @ShellComponent
 public class GenerateCommand {
     private final InputReader inputReader;

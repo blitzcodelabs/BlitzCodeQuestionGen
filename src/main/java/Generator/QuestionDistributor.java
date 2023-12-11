@@ -5,9 +5,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Optional;
-
+/**
+ * This class handles distributing created JSON files to a specified directory
+ */
 public class QuestionDistributor {
-
+    /**
+     * Method uses arguments to create a prompt using QuestionPrompter.
+     * Distributes the generated response to a created JSON file at specified destination.
+     */
     public Optional<String> distribute(String filePath, String numOfQuestions, String targetLang, String srcLang, String topic){
         var gen = new ChatResponse();
         var prompter = new QuestionPrompter();

@@ -7,9 +7,14 @@ import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * This class implements a request to OpenAI's API.
+ */
 public class ChatResponse {
     private final String OPENAI_API_KEY = System.getenv("OPENAI_API_KEY");
+    /**
+     * returns response from OpenAPI API with given prompt.
+     */
     public String getQuestion(String prompt){
         var service = new OpenAiService(OPENAI_API_KEY, Duration.ofMinutes(3));
         List<ChatMessage> messages = new ArrayList<>();
